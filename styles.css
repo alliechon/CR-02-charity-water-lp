@@ -26,38 +26,41 @@ Fonts:
 /* Set up the main font and background color for the whole page */
 body {
   background-color: #f4f8fb; /* Soft light blue for a fresh look */
-  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  font-family: 'Proxima Nova', 'Proxima Nova', Avenir, sans-serif;
   margin: 0;
   padding: 0;
   color: #222;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+  /* Set the background image for the whole page */
+body {
+  /* This sets the background image of the page */
+  background-image: url('https://cdn2.dropmarkusercontent.com/52043/7a321e5cb73b82c78f1f856e803e711e8c305e68/JS_20170302_2-385_preview.jpg?Expires=1757173725&Signature=Xgt-JzRrNPJAaoT4DomebylpssBuXZFXgZZrXj6~H1slJsT1IR6mLEznO2~0pi7XBisQmt3invmmxRswUzEvEZN-QrFh00zlW~TosZgfyvXKKTOj-q2xWhiuYoKEl4wjaOl~7bg3hbPiWiUPwD3PvfQjlHALgeBjsgLBSV0FINJybNhe-Z4bc4IyqjUCs0HAn-~qcayuLhptMjjYpFiGgU3KOdMybxs3nLuqtwJFE2AL9LPzGBtLtCVmMPWbEq4218xKAD7Zz9wqUkBd6XzvcHtRPeQrf0rzvQKQbpmC0qoeiZJv5eCjJatgv9DYAJfpJ-pXXUVzyg9-zJzmx~J-Ew__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
+  /* Make the image cover the whole page */
+  background-size: 130%;
+  /* Move the background image to the right by 60% */
+  background-position-x: 60px center;
+  background-position-y: 50px center;
+  background-repeat: no-repeat;
+}
 
-/* Add a slight shadow and rounded corners to each section for depth */
 section {
   background: #fff; /* White background for sections */
   border-radius: 12px; /* Rounded corners */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
   margin: 24px 10px; /* Space between sections */
-  padding: 24px 16px;
+  padding: 80px 20px 20px;
 }
 
 /* Hero Section Styles */
 .hero {
-  position: relative; /* Needed for overlay */
-  /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;      /* Make the image cover the whole area */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
-  color: #fff;                 /* White text for contrast */
   text-align: center;          /* Center the text */
   padding: 60px 20px;          /* Add space above and below */
   border-radius: 0 0 16px 16px; /* Only round bottom corners */
-
-  /* Add a dark overlay for better text readability */
-  /* This uses a simple linear-gradient overlay */
-  background-blend-mode: darken;
-  background-color: rgba(46, 157, 247, 0.45); /* Blue overlay */
 }
 
 /* Make the headline bold and modern */
@@ -67,6 +70,7 @@ section {
   letter-spacing: 1px;
   margin-bottom: 15px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
+    font-family: 'Proxima Nova', Avenir, sans-serif; /* Use Proxima Nova font */
 }
 
 /* Style the subheadline */
@@ -74,6 +78,7 @@ section {
   font-size: 1.2em;
   margin-top: 0;
   text-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    font-family: 'Proxima Nova', Avenir, sans-serif; /* Use Proxima Nova font */
 }
 
 /* Story Section Styles */
@@ -94,7 +99,7 @@ h2 {
 /* Call-to-Action Section Styles */
 .call-to-action {
   background-color: #FFC907; /* Primary Yellow */
-  color: #222;
+  color: #FFC907;
   text-align: center;
   padding: 30px 20px;
 }
@@ -118,6 +123,7 @@ h2 {
   border-radius: 6px;
   font-weight: bold;
   font-size: 1.1em;
+  font-family: 'Proxima Nova', Avenir, sans-serif; /* Use Proxima Nova font */
   margin-top: 18px;
   box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10);
   transition: background 0.3s, transform 0.2s;
@@ -127,7 +133,7 @@ h2 {
 
 /* Change button color when hovered */
 .donate-button:hover {
-  background-color: #159A48; /* Dark Green */
+  background-color: #FFC907; /* yellow */
   transform: translateY(-2px) scale(1.04); /* Slight lift */
 }
 
